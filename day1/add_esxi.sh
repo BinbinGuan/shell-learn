@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# https://my.oschina.net/u/1032146/blog/146941
+# https://blog.51cto.com/151wqooo/1173381
+# https://www.cnblogs.com/fhefh/archive/2011/04/15/2017613.html
+# https://blog.csdn.net/doiido/article/details/43966819
 if (( $# < 1 )); then
 	echo "Usage: $0 <esxi host ip>"
 	exit 1;
