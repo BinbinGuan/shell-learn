@@ -1,0 +1,16 @@
+# 创建容器
+docker container run -d -p 80:80 --rm --name mynginx nginx
+# 查询运行中的容器
+docker ps
+# 查看所有容器
+docker container ls -a
+# 删除容器
+docker rm mynginx
+# 要删除正在运行中的容器，需要使用-f选项。
+docker rm -f mynginx
+# 进入容器
+docker exec -it mysql8x /bin/bash
+
+
+# 创建镜像
+docker images
