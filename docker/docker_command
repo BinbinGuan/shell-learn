@@ -1,16 +1,35 @@
-# 创建容器
-docker container run -d -p 80:80 --rm --name mynginx nginx
-# 查询运行中的容器
-docker ps
-# 查看所有容器
-docker container ls -a
-# 删除容器
-docker rm mynginx
-# 要删除正在运行中的容器，需要使用-f选项。
-docker rm -f mynginx
-# 进入容器
-docker exec -it mysql8x /bin/bash
+
+https://hub.docker.com //仓库地址
+1. docker container run -d -p 80:80 --rm --name mynginx nginx # 创建容器，run可以省略
+
+2.docker ps # 查询运行中的容器
+
+3.docker container ls -a # 查看所有容器
+
+4.docker rm mynginx   # 删除容器
+
+5.docker rm -f mynginx  # 要删除正在运行中的容器，需要使用-f选项。
 
 
-# 创建镜像
-docker images
+6.docker exec -it mysql8x /bin/bash # 进入容器 或者 /bin/sh
+
+7、docker exec -t -i ID /bin/bash   #进入容器
+
+8、docker logs -f ID      #查看容器的实时日志
+
+9、docker stop ID      #停止容器（start/kill/stop/restart）
+
+10、docker rm ID         #删除容器
+
+11、docker rmi ID        #删除镜像
+
+12. docker ps |grep httpserver  #查询某个运行中的容器
+docker exec -it 容器名 /bin/sh
+
+13、docker search nginx # 搜索镜像
+
+14 docker tag guanbinbin/springboot/java8-test guanbinbin/java8-test:latest #打标签
+
+14.https://cr.console.aliyun.com/cn-hangzhou/instances/mirrors?accounttraceid=1c015c114f2f4de59f9300ef1dbf5c19bwkj #镜像加速器
+
+https://www.runoob.com/docker/docker-mirror-acceleration.html
