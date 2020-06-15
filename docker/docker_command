@@ -28,8 +28,18 @@ docker exec -it 容器名 /bin/sh
 
 13、docker search nginx # 搜索镜像
 
-14 docker tag guanbinbin/springboot/java8-test guanbinbin/java8-test:latest #打标签
+14、创建镜像 docker build -t ubuntu:tag .
 
-14.https://cr.console.aliyun.com/cn-hangzhou/instances/mirrors?accounttraceid=1c015c114f2f4de59f9300ef1dbf5c19bwkj #镜像加速器
+15 docker tag guanbinbin/springboot/java8-test guanbinbin/java8-test:latest #打标签
+
+16. docker network ls # 查询docker的网络
+
+17. docker network connect 网络名称  {容器id} # 容器添加网卡
+
+18. brctl show 查询网桥
+
+19 docker netwrok inspect my_net_2 查询网络的详细信息 
+
+16.https://cr.console.aliyun.com/cn-hangzhou/instances/mirrors?accounttraceid=1c015c114f2f4de59f9300ef1dbf5c19bwkj #镜像加速器
 
 https://www.runoob.com/docker/docker-mirror-acceleration.html
